@@ -49,18 +49,18 @@ def not_bad(s):
 def front_back(a, b):
     # +++your code here+++
     if len(a) % 2:
-        a_front_half = (len(a) // 2) + 1
+        a_half = (len(a) // 2) + 1
     else:
-        a_front_half = (len(a) // 2)
+        a_half = len(a) // 2
     if len(b) % 2:
-        b_front_half = (len(b) // 2) + 1
+        b_half = (len(b) // 2) + 1
     else:
-        b_front_half = (len(b) // 2)
+        b_half = len(b) // 2
     return ''.join([
-                a[:a_front_half],
-                b[:b_front_half],
-                a[a_front_half:],
-                b[b_front_half:],
+                a[:a_half],
+                b[:b_half],
+                a[a_half:],
+                b[b_half:],
             ])
 
 
